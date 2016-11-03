@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.bitsaa.bamc.Register">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:theme="@style/AppTheme.AppBarOverlay">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarR"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                />
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:padding="16dp"
+            >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_perm_identity_black_24dp"
+            android:id="@+id/name"
+            android:hint="NAME"
+            android:textSize="14dp"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:background="@drawable/shape"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_phone_black_24dp"
+            android:id="@+id/phone"
+            android:hint="MOBILE NO"
+            android:textSize="14dp"
+            android:inputType="phone"
+            android:padding="15dp"
+            android:background="@drawable/shape"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_mail_outline_black_24dp"
+            android:id="@+id/email"
+            android:hint="EMAIL ID"
+            android:textSize="14dp"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:background="@drawable/shape"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_lock_outline_black_24dp"
+            android:id="@+id/password"
+            android:hint="PASSWORD"
+            android:textSize="14dp"
+            android:inputType="textPassword"
+            android:layout_marginTop="0dp"
+            android:padding="15dp"
+            android:background="@drawable/shape"/>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signup"
+            android:text="SIGN UP"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/textButton"/>
+
+
+
+    </LinearLayout>
+</LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
